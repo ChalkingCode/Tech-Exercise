@@ -25,7 +25,7 @@ Clone repository
 
 ##### Solution 
 
-The Bash script can be seen in repo printnames.sh or cat printname.sh in terminal
+The Bash script can be seen in repo as printnames.sh or cat printname.sh in terminal
 	
 	# this will give executable permission to  printnames.sh 
 	$ chmod +x printnames.sh
