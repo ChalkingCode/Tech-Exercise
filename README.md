@@ -22,8 +22,18 @@ Clone repository
 	- ./printnames bob dan (yields: Hello, bob\nHello, dan)
 	- ./printnames (yields: You did not specify at least two names)
 	- ./printnames bob dan jim (yields: Hello, bob\nHello, dan, Hello jim)
-##### Solution 
 
+##### Solution 
+	
+	# this will give executable permission to  printnames.sh 
+	$ chmod +x printnames.sh
+	# the command below will yield You did not specify at least two names  
+	$ ./printnames bob
+	# the command below will yield Hello, bob\nHello, dan\n
+	$ ./printnames bob dan
+	# the command below will yield Hello, bob\nHello, dan\nHello jim\n
+	$ ./ bob dan jim
+	
 The solution can be found in printnames.sh 
 
 ## Data 
