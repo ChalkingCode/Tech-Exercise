@@ -36,7 +36,8 @@ The solution can be found in printnames.sh
 	# List jobs per user 
 	$ crontab -l
 	# edit/create cronjobs 
-	$ crontab -e 
+	$ crontab -e
+	# you want to use pwd to find the file path of your csv2json.py  
 	$ 0 3,23 * * TUE home/user/csv2json.py 
 
 ## Relationaldb 
