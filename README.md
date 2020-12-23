@@ -34,9 +34,9 @@ The solution can be found in printnames.sh
 ##### Solution
 	
 	# List jobs per user 
-	$ cron -l
+	$ crontab -l
 	# edit/create cronjobs 
-	$ cron -e 
+	$ crontab -e 
 	$ 0 3,23 * * TUE home/user/csv2json.py 
 
 ## Relationaldb 
