@@ -24,6 +24,8 @@ Clone repository
 	- ./printnames bob dan jim (yields: Hello, bob\nHello, dan, Hello jim)
 
 ##### Solution 
+
+The Bash script can be seen in repo printnames.sh or cat printname.sh in terminal
 	
 	# this will give executable permission to  printnames.sh 
 	$ chmod +x printnames.sh
@@ -34,7 +36,6 @@ Clone repository
 	# the command below will yield Hello, bob\nHello, dan\nHello jim\n
 	$ ./ bob dan jim
 	
-The solution can be found in printnames.sh 
 
 ## Data
 
