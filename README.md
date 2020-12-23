@@ -36,7 +36,21 @@ Clone repository
 	
 The solution can be found in printnames.sh 
 
-## Data 
+## Data
+
+- Write a python script called csv2json.py that takes in data_in.csv and generate a data_out.json.
+
+
+- Data_out.json:
+	- {"csv_output": [{"name": "John Doe","exam_id": "abc12345","arrived_timestamp": "2020-08-28 10:35:22"}, {"name": "Jane Doe","exam_id": "abc7854","arrived_timestamp": "2020-08-27 05:26:32"}]}
+
+##### Solution 
+	# Run command 
+	$ python csv2json.py
+	# to see results run below or just open the json file  
+	$ cat Data_out.json 
+	
+Also see csv2json.py in Repo 
 
 ## Cron 
 - Create a cronjob for the script created in the previous exercise that will run  Tuesdays at 3am and 11pm
