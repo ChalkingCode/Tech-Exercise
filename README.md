@@ -1,10 +1,18 @@
 # Tech Exercises
 
 ## Table of contents
+* [Setup](#setup)
 * [Bash](#bash)
 * [Data](#data)
 * [Cron](#cron)
-*[Relationaldb](#relationaldb)
+* [Relationaldb](#relationaldb)
+
+## Setup
+
+Clone repository 
+
+	$ git clone https://github.com/ChalkingCode/Tech-Exercise.git
+	$ cd Tech-Exercise
 
 ## Bash 
 - Write a bash script called print names that takes 2 arguments and an optional third
@@ -20,15 +28,6 @@ The solution can be found in printnames.sh
 
 ## Data 
 
-clone the repository 
-
-	$ git clone https://github.com/ChalkingCode/React-App-Yara-Intel-.git
-	$ cd  React-App-Yara-Intel-
-
-install dependencies and run   
-
-	$ npm install
-	$ npm start 
 ## Cron 
 - Create a cronjob for the script created in the previous exercise that will run  Tuesdays at 3am and 11pm
 
