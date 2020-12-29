@@ -1,2 +1,1 @@
-{"exam_id": "abc12345", "name": "John Doe", "arrived_time": "2020-08-28 10:35:22"}
-{"exam_id": "abc7854", "name": "Jane Doe", "arrived_time": "2020-08-27 05:26:32"}
+[{"name": "John Doe", "exam_id": "abc12345", "arrived_time": "2020-08-28 10:35:22"}, {"name": "Jane Doe", "exam_id": "abc7854", "arrived_time": "2020-08-27 05:26:32"}]

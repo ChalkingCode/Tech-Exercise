@@ -45,12 +45,17 @@ The Bash script can be seen in repo as printnames.sh or cat printname.sh in term
 - Data_out.json:
 	- {"csv_output": [{"name": "John Doe","exam_id": "abc12345","arrived_timestamp": "2020-08-28 10:35:22"}, {"name": "Jane Doe","exam_id": "abc7854","arrived_timestamp": "2020-08-27 05:26:32"}]}
 
-##### Solution 
+##### Solution
+If still running a version of python older than 3.6 you should update or create virtual env. This is due to how json dumps dictionaries are unordered.
+	# Set up Virtual env if python version older than 3.6 
+	$ python3 -m venv nameofenv
+	$ source nameofenv/bin/activate
+	$ python --version 
 	# Run command 
 	$ python csv2json.py
 	# to see results run below or just open the json file  
 	$ cat Data_out.json 
-	
+	$ [{"name": "John Doe", "exam_id": "abc12345", "arrived_time": "2020-08-28 10:35:22"}, {"name": "Jane Doe", "exam_id": "abc7854", "arrived_time": "2020-08-27 05:26:32"}]	
 Also see csv2json.py in Repo 
 
 ## Cron 
