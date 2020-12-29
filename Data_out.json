@@ -1,1 +1,23 @@
-[{"name": "John Doe", "exam_id": "abc12345", "arrived_time": "2020-08-28 10:35:22"}, {"name": "Jane Doe", "exam_id": "abc7854", "arrived_time": "2020-08-27 05:26:32"}]
+[
+    {
+        "name": "John Doe",
+        "exam_id": "abc1234",
+        "patient_type": "I",
+        "arrived_timestamp": "2020-08-28 10:35:22",
+        "e_flag": "False"
+    },
+    {
+        "name": "Jane Doe",
+        "exam_id": "abc7854",
+        "patient_type": "O",
+        "arrived_timestamp": "2020-08-27 05:26:32",
+        "e_flag": "False"
+    },
+    {
+        "name": "Jared Fisher",
+        "exam_id": "def9876",
+        "patient_type": "O",
+        "arrived_timestamp": "2020-08-29 11:31:27",
+        "e_flag": "True"
+    }
+]

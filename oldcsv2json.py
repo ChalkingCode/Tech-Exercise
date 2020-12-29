@@ -25,9 +25,12 @@ def get_data():
 
         fieldnames = ("name","exam_id","arrived_time")
         reader = csv.DictReader( csvfile, fieldnames)
-        for row in reader:
-                json.dump(row, jsonfile)
-                jsonfile.write('\n')
+	out = json.dump( [ row for row in reader ] )
+	f.write(out)
+	#below is for multiline 
+       # for row in reader:
+        #        json.dump(row, jsonfile)
+         #       jsonfile.write('\n')
 
 change_format()
 get_data()

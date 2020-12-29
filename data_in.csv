@@ -1,3 +1,4 @@
-name,exam_id,arrived_time
-John Doe,abc12345,20200828103522
-Jane Doe,abc7854,20200827052632
+name,exam_id,patient_type,arrived_timestamp
+John Doe,abc1234,I,20200828103522
+Jane Doe,abc7854,O,20200827052632
+Jared Fisher,def9876,E,20200829113127
