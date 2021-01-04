@@ -139,27 +139,33 @@ Also see csv2json.py in Repo
 - Given a 50GB volume, partition into 20GB and 30GB parts.
 	- Mount 20GB as /servers
 		
+##### Solution
 		
-		# say you have 100GB at /home/ and you want to allocate out 20GB 
-		# 20 GB t
-		$ df -h
-		$ umount /home/ 
-		# you will find the path with command df -h 
-		$ e2fsck -f filesystem path to /home/ 
-		$ resize2fs filesystem/path/to/home 20GB
-		$ lvreduce -L 20G filesystem/path/to/home 
-		$ mount /home/
-		$ df -h /home/ 
-		$ lvs 
-		$ lvextend -L +20G filesystem/path/to/servers
-		$ resize2fs filesystem/path/to/servers/ 20G 
-		$ df -h /servers 
+	$ say you have 100GB at /home/ and you want to allocate out 20GB 
+	# 20 GB t
+	$ df -h
+	$ umount /home/ 
+	# you will find the path with command df -h 
+	$ e2fsck -f filesystem path to /home/ 
+	$ resize2fs filesystem/path/to/home 20GB
+	$ lvreduce -L 20G filesystem/path/to/home 
+	$ mount /home/
+	$ df -h /home/ 
+	$ lvs 
+	$ lvextend -L +20G filesystem/path/to/servers
+	$ resize2fs filesystem/path/to/servers/ 20G 
+	$ df -h /servers 
 	
 	- Mount 30GB as /data
-		
-		# same as above but for 30G and filesystem/path/to/data
+
+##### Solution		
+	
+	# same as above but for 30G and filesystem/path/to/data
+
 - Add /servers persistently to PATH variable
 - Change timezone to localtime
+
+##### Solution
 
 	# how to check current time zone
 	$ timedatectl
@@ -173,6 +179,8 @@ Also see csv2json.py in Repo
 	$ timedatectl
 
 - Create a user test1 and group testers
+
+##### Solution 
 	
 	# Create a user 
 	$ sudo useradd -m test1 -p randompassword
@@ -181,10 +189,13 @@ Also see csv2json.py in Repo
 	
 	- Create a folder /servers/tests where you are the owner but testers group can write to the directory
 		
-		$ mkdir /servers/tests
-		$ ls -l 
-		$ chown username foldername
-		$ chmod g+w foldername
+##### Solution
+		
+	$ mkdir /servers/tests
+	$ ls -l 
+	$ chown username foldername
+	$ chmod g+w foldername
+
 ## Questions
 
 ###### Questions? If you have a question or would like to add feedback please contact me at skylarbarrowman@gmail.com. :)
