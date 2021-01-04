@@ -23,12 +23,20 @@ def get_em(csvFilePath, jsonFilePath):
                         row[rows] = datetime.strptime(row[rows].strip(),'%Y%m%d%H%M%S').strftime("%Y-%m-%d %H:%M:%S")
             #add this python dict to json array
            # jsonArray.append(row)
-
+                if 'exam_id' in rows:
+                    prefix = 'ACC'
+                    id = row[rows]
+                    row[rows] = prefix + id 
                 if 'patient_type' in rows:
                     if row[rows] == 'E':
                         row[rows] = 'O'
                        # row.update({'e_flag': 'True'})
                         row['e_flag'] = 'True'
+                if 'name' in rows:
+                    first = row[rows].split()[0]
+                    last = row[rows].split()[-1]
+                    row[rows] = first + '^' + last
+			
 
 
 
