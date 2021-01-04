@@ -86,7 +86,7 @@ Example:
                        # Add a key to the payload e_flag set to true 
                         row['e_flag'] = 'True'
                 # Bonus Change given name to Last^First in payload
-		if 'name' in rows:
+	if 'name' in rows:
                     first = row[rows].split()[0]
                     last = row[rows].split()[-1]
                     row[rows] = first + '^' + last
